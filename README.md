@@ -3,6 +3,7 @@
 This repo contains auto generated [golang](https://golang.org/)
 bindings for [scribe](https://github.com/facebookarchive/scribe).
 
+Generated docs: [https://godoc.org/github.com/Yelp/golang-scribe](https://godoc.org/github.com/Yelp/golang-scribe)
 
 ## Why?
 
@@ -18,8 +19,6 @@ generated file everywhere. We believe that our builds should be
 easily reproducible. Thus, in this effort, we created this repo which
 contains both the generated Go files for easy use and the build
 process.
-
-*tl;dr* Easy Go bindings for Scribe which you can build yourself
 
 ## Example Usage
 
@@ -45,9 +44,9 @@ The only dependencies if you're building with docker are:
 
   * git
   * make
-  * docker (duh)
+  * docker
 
-simply run `make` and you should spin up a docker container that
+Simply run `make` and you should spin up a docker container that
 downloads all the required dependencies and generate the bindings
 for you.
 
