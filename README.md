@@ -1,4 +1,4 @@
-# golang-scribe: go bindings for scribe
+# golang-scribe: go bindings for scribe [![Build Status](https://travis-ci.org/Yelp/golang-scribe.svg?branch=master)](https://travis-ci.org/Yelp/golang-scribe/)
 
 This repo contains auto generated [golang](https://golang.org/)
 bindings for [scribe](https://github.com/facebookarchive/scribe).
