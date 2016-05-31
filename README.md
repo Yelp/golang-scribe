@@ -25,13 +25,13 @@ process.
 
 If you just wanna use our bindings, just go get it with:
 
-`go get github.com/Yelp/golang-scribe`
+`go get github.com/Yelp/golang-scribe/scribe`
 
 and add it like a normal Go
 remote import like so
 
 ```go
-import "github.com/Yelp/golang-scribe
+import "github.com/Yelp/golang-scribe/scribe"
 ```
 
 ## Build Guide
