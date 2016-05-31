@@ -3,8 +3,6 @@
 This repo contains auto generated [golang](https://golang.org/)
 bindings for [scribe](https://github.com/facebookarchive/scribe).
 
-Generated docs: [https://godoc.org/github.com/Yelp/golang-scribe](https://godoc.org/github.com/Yelp/golang-scribe)
-
 ## Why?
 
 Here at Yelp we use Scribe in some of our Go based projects.
