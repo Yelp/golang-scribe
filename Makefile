@@ -14,7 +14,34 @@ $(THRIFT_PATH)/configure: | $(THRIFT_PATH)
 	cd $(THRIFT_PATH); ./bootstrap.sh
 
 $(THRIFT_PATH)/Makefile: $(THRIFT_PATH)/configure
-	cd $(THRIFT_PATH) && ./configure --without-qt4 --without-c_glib --without-csharp --without-java --without-erlang --without-nodejs --without-lua --without-python --without-perl --without-php --without-php_extension --without-ruby --without-haskell --without-cpp
+	cd $(THRIFT_PATH) && ./configure \
+	    --without-as3 \
+	    --without-c_glib \
+	    --without-cl \
+	    --without-cpp \
+	    --without-csharp \
+	    --without-d \
+	    --without-dotnetcore \
+	    --without-erlang \
+	    --without-haskell \
+	    --without-haxe \
+	    --without-java \
+	    --without-js \
+	    --without-lua \
+	    --without-nodejs \
+	    --without-nodets \
+	    --without-perl \
+	    --without-php \
+	    --without-php_extension \
+	    --without-py3 \
+	    --without-python \
+	    --without-qt5 \
+	    --without-rb \
+	    --without-rs \
+	    --without-ruby \
+	    --without-st \
+	    --without-swift \
+
 
 $(THRIFT_PATH)/compiler/cpp/thrift: $(THRIFT_PATH)/Makefile
 	cd $(THRIFT_PATH); make
@@ -26,7 +53,7 @@ $(THRIFT_PATH)/compiler/cpp/thrift: $(THRIFT_PATH)/Makefile
 # ===========
 # Only clone the repos if they don't already exist
 $(THRIFT_PATH):
-	git clone http://git.apache.org/thrift.git/ $(THRIFT_PATH)
+	git clone https://github.com/apache/thrift.git/ $(THRIFT_PATH)
 $(SCRIBE_PATH):
 	git clone https://github.com/facebookarchive/scribe.git $(SCRIBE_PATH)
 # ==========
